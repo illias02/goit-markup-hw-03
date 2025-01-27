@@ -8,9 +8,39 @@ a {
     text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
 ul,
 ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.container {
+    width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 button {
@@ -41,9 +71,34 @@ button {
 }
 
 /* Стиль для навігаційних посилань */
-.nav-list {}
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
 
-.nav-item {}
+.address-list {
+    display: flex;
+    gap: 40px;
+    
+}
+
+.nav-page {
+    display: flex;
+    align-items: center;
+}
+
+.header-page .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+}
 
 .nav-item-link {
     font-weight: 500;
@@ -70,7 +125,11 @@ button {
     font-style: normal;
 }
 
-.address-item {}
+.address-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+}
 
 .address-item-link {
     font-weight: 400;
@@ -90,6 +149,17 @@ button {
 
 .hero {
         background-color: #2e2f42;
+        justify-content: center;
+        align-items: center;
+    }
+
+.hero-cont {
+text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
     }
 
 .hero-title {
@@ -99,6 +169,8 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 48px;
+    width: 496px;
 }
 
 .hero-button {
@@ -108,6 +180,10 @@ button {
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
+    width: 169px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;   
 }
 
 .hero-button:hover,
@@ -117,9 +193,18 @@ button {
 
 /* region main two */
 
-.item {}
+.item {
+    display: flex;
+    gap: 24px;
+}
+
+.feature {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .first-item {
+    width: 264px;
 }
 
 .title-first-item {
@@ -128,6 +213,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .text-first-item {
@@ -144,6 +230,8 @@ button {
 
 .section-three {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .mini-title {
@@ -153,9 +241,19 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    text-transform: capitalize}
+    text-transform: capitalize;
+    padding-bottom: 72px;   
+}
 
 .item-two {
+    display: flex;
+    gap: 24px;
+}
+.letter {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .second-item {
@@ -169,6 +267,7 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
 .text-second-item {
@@ -184,6 +283,11 @@ button {
 
 /* region main four */
 
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .mini-title-two {
     font-weight: 700;
     font-size: 36px;
@@ -192,12 +296,19 @@ button {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 
-.item-three {}
+.item-three {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
 
 .third-item {
     background-color: #fff;
+    border-bottom:1px solid #E7E9FC;
+    width: calc((100% - 48px) / 3);
 }
 
 .title-third-item {
@@ -222,6 +333,8 @@ button {
 
 .footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo-style {
@@ -242,6 +355,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-bottom: 16px;
 }
 
 .footer-text {
@@ -250,6 +364,11 @@ button {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        width: 264px;
 } 
+
+.logo-foot {
+    padding-bottom: 16px;
+}
 
 /* endregion footer */
