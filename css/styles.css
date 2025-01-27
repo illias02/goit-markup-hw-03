@@ -23,8 +23,8 @@ ol {
 }
 .container {
     width: 1158px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,6 +49,10 @@ button {
 
 /* region header */
 
+.header-page {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -57,6 +61,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 /* Стиль для тегу span всередині логотипу */
@@ -74,13 +79,13 @@ button {
 .nav-list {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-list {
     display: flex;
-    gap: 40px;
-    
+    gap: 40px; 
 }
 
 .nav-page {
@@ -95,8 +100,6 @@ button {
 
 
 .nav-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: block;
 }
 
@@ -149,17 +152,13 @@ button {
 
 .hero {
         background-color: #2e2f42;
+        display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-.hero-cont {
-text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+        flex-direction: column;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        text-align: center;
     }
 
 .hero-title {
@@ -167,10 +166,11 @@ text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
     margin-bottom: 48px;
-    width: 496px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button {
@@ -180,7 +180,8 @@ text-align: center;
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
-    width: 169px;
+    min-width: 169px;
+    height: 56px;
     border: none;
     border-radius: 4px;
     padding: 16px 32px 16px 32px;   
@@ -242,7 +243,7 @@ text-align: center;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    padding-bottom: 72px;   
+    margin-bottom: 72px;   
 }
 
 .item-two {
@@ -250,14 +251,12 @@ text-align: center;
     gap: 24px;
 }
 .letter {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0;
 }
 
 .second-item {
     background: #fff;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .title-second-item {
@@ -267,7 +266,7 @@ text-align: center;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .text-second-item {
@@ -296,13 +295,14 @@ text-align: center;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .item-three {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 
 .third-item {
@@ -311,12 +311,18 @@ text-align: center;
     width: calc((100% - 48px) / 3);
 }
 
+.item-container {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+
 .title-third-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .text-third-item {
@@ -355,7 +361,9 @@ text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+
 }
 
 .footer-text {
@@ -366,9 +374,4 @@ text-align: center;
         color: #f4f4fd;
         width: 264px;
 } 
-
-.logo-foot {
-    padding-bottom: 16px;
-}
-
 /* endregion footer */
