@@ -103,8 +103,6 @@ button {
 
 .nav-item {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .nav-item-link {
@@ -145,6 +143,7 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
+    padding: 24px 0;
 }
 
 .address-item-link:hover,
