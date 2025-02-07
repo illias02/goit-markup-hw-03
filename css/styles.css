@@ -83,6 +83,7 @@ button {
 .nav-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .address-list {
@@ -347,6 +348,18 @@ button {
     padding: 100px 0;
 }
 
+.footer_link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer-logo-style {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -355,19 +368,6 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
-}
-
-.footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    margin-bottom: 16px;
-    display: inline-block;
-
 }
 
 .footer-text {
