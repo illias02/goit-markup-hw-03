@@ -83,7 +83,6 @@ button {
 .nav-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .address-list {
@@ -113,6 +112,7 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    padding: 24px 0;
 }
 
 .nav-item-link:hover,
